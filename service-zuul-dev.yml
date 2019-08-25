@@ -13,6 +13,9 @@ spring:
   application:
     name: service-zuul
 zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   routes:
     api-a:
       path: /api-a/**
