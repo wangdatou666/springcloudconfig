@@ -17,12 +17,15 @@ zuul:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
   routes:
-    api-a:
+    api-ribbon:
       path: /api-ribbon/**
       serviceId: service-ribbon
-    api-b:
+    api-feign:
       path: /api-feign/**
       serviceId: service-feign
+    api-mail:
+      path: /api-mail/**
+      serviceId: service-mail
 
 hystrix:
   command:
