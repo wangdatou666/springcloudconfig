@@ -18,11 +18,8 @@ zuul:
     connect-timeout-millis: 60000
   routes:
     api-a:
-      path: /api-a/**
+      path: /api-ribbon/**
       serviceId: service-ribbon
     api-b:
-      path: /api-b/**
+      path: /api-feign/**
       serviceId: service-feign
-    api-mail:
-      path: /api-mail/**
-      serviceId: service-mail
