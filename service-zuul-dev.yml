@@ -23,3 +23,11 @@ zuul:
     api-b:
       path: /api-feign/**
       serviceId: service-feign
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
