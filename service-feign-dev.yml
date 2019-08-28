@@ -7,7 +7,7 @@ eureka:
         lease-renewal-interval-in-seconds: 1
 feign:
     hystrix:
-        enabled: true
+        enabled: false
 server:
     port: 8765
 spring:
